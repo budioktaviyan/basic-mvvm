@@ -13,5 +13,8 @@ class MainActivity : AppCompatActivity() {
 
     val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
     binding.btnClick.setOnClickListener { Snackbar.make(binding.root, "Halo!", Snackbar.LENGTH_SHORT).show() }
+
+    val model = MainModel(name = "Budi Oktaviyan")
+    binding.user = model
   }
 }
