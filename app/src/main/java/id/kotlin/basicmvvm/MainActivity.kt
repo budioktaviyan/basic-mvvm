@@ -10,7 +10,9 @@ class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 
+    val viewModel = MainViewModel()
     val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
-    binding.viewModel = MainViewModel()
+    binding.viewModel = viewModel
+    binding.btnClick.setOnClickListener { viewModel.doSomething(binding.root) }
   }
 }

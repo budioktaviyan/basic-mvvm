@@ -61,5 +61,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Label" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/click"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/grey"
+        app:rippleColor="@color/grey_dark"
+        app:layout_constraintBottom_toBottomOf="parent" />
   </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
